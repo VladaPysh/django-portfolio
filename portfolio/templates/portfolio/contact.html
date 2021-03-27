@@ -1,0 +1,7 @@
+<div class="contactform">
+	<form action={% url 'contact' %} method="post" autocomplete="off">
+        {% csrf_token %}
+            {{ form.as_p }}
+            <button class="button b_1" type="submit">Submit</button>
+        </form>
+    </div>

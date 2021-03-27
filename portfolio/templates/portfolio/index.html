@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'portfolio/styles.css'%}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="landing">
+    <div class="animation-1"></div>
+    <div class="animation-2"></div>
+    <div class="animation-3"></div>
+      <div class="landing-page">
+        <div class="left">
+          <div class="name">
+            <h1 class="firstname">Vladyslava</h1>
+            <h1 class="lastname">Pyshnenko</h1>
+          </div>
+          <h4>Full stack web-developer</h4>
+          <div class="buttons">
+            <a class="button b_1" href="#portfolio">Portfolio</a>
+            <a class="button b_2" href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="right">
+          <img src="images/profile-min.png" alt="main">
+        </div>
+      </div>
+    </div>
+
+    <h1 class="heading" id="about">About me</h1>
+
+    <section class="landing">
+      <div class="content">
+        <div class="about">
+        <input class="input" id="toggle" type="checkbox" unchecked>
+        <label for="toggle"><p style="margin-top: 0;">My name is Vladyslava and I am a full stack web-developer. Motivated, driven to expand my knowledge and become an irreplaceable asset to your company.</p>
+          <p><b>Skills: </b> HTML, CSS, SASS, Bootrstrap, JavaScript, Python, Django, C, SQL, Figma, Photoshop, GitHub.</p>
+          <p class="p-invisible">My background is in sports and fashion. I had been a professional athlete for 16 years: figure skater and sprint runner. Winning hundreds of awards has taught me discipline, determination, also hard work. &#8595;</p></label>  
+          <div id="expand">
+            <p style="margin-top: 0;">Years of work as an international fashion model allowed me to see the world, live in 9 different countries, work with famous designers and magazines. Moreover, to be a mentor for younger models, understand cultures, fashion, design, and photography, learn how to deal with anyone from anywhere, and study languages. <i>I speak English, Ukrainian, Russian and Spanish.</i></p>
+            <p>I’ve graduated “with honors” with a bachelor in management and a master in management of foreign economic activity. While studying, I was a part of the non-profit organization Enactus ONU. I learned how to work as a team member and find solutions for different problems.</p>
+            <p>During the pandemic of 2020, I discovered the world of tech. Programming became my passion. I finished HarvardX cs50 Introduction to Computer Science and currently working on cs50 Web-Programming with JavaScript and Python.</p>
+            <p style="margin-bottom: 0;">Therefore, please take a look at my work. Let’s see what we can achieve together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <h1 class="heading" id="portfolio">Portfolio</h1>
+    
+    <section class="landing">
+      <div class="content">
+        <div class="portfolio">
+          <div class="project-item" data-aos="fade-right" data-aos-delay="300">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/M9S0FDmIW3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="description">Wiki is a Wikipedia-like encyclopedia, which allows users to search, create or modify an encyclopedia entry. Show complete list of entries or display a random one. Stack: Django, Python, CSS and HTML.</p>
+            <div class="buttons">
+              <a class="button b_1" href="https://github.com/VladaPysh/Wiki">Github</a>
+            </div>
+          </div>
+          <div class="project-item" data-aos="fade-left" data-aos-delay="500">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/BinZOXTGBFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="description">An eBay-like e-commerce auction site that allows users to post auction listings, place bids on listings, comment on those listings, and add listings to a “watchlist”. Stack: Django, Python, SASS, HTML, Bootstrap</p>
+            <div class="buttons">
+              <a class="button b_1" href="https://github.com/VladaPysh/Commerce">Github</a>
+            </div>
+          </div>
+          <div class="project-item" data-aos="fade-right" data-aos-delay="700">
+            <img class="item" src="images/chatapp.jpg" alt="project">
+            <p class="description">A front-end for a chatapp: designed with Figma and build using HTML, SASS, Bootstrap.</p>
+            <div class="buttons">
+              <a class="button b_1" href="https://github.com/VladaPysh/Chateo">Github</a>
+              <a class="button b_2" href="https://vladapysh.github.io/Chateo/">Demo</a>
+            </div>
+          </div>
+          <div class="project-item" data-aos="fade-left" data-aos-delay="900">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/sgi_DGCnyCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="description">A front-end for Google Search, Google Image Search, and Google Advanced Search.</p>
+            <div class="buttons">
+              <a class="button b_1" href="https://github.com/VladaPysh/Search">Github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h1 class="heading" id="contact">Contact</h1>
+    <section class="landing">
+      <div class="content">
+        {% include "portfolio/contact.html" %}
+        <div class="contact">
+        <a data-aos="fade-in" class="contact_item" href="mailto:vlada.pysh1@gmail.com"><img src="images/mail.png" alt="mail"></a>
+        <a data-aos="fade-in" data-aos-delay="600" class="contact_item" href="https://github.com/VladaPysh/"><img src="images/github.png"></a>
+        <a data-aos="fade-in" data-aos-delay="1200" class="contact_item" href="#"><img src="images/linkedin.png"></a>
+        </div>
+      </div>
+    </section>
+
+    <p class="heading footer">&#169 2021 Vladyslava Pyshnenko</p>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="{% static 'portfolio/portfolio.js' %}"></script>
+  </body>
+</html>
