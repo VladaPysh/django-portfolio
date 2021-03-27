@@ -262,11 +262,11 @@ b {
 }
 
 .contact_item {
-  padding: 6vh;
+  padding: 5vh;
 }
 
 .contactform {
-  max-width: 450px;
+  max-width: 480px;
   margin: auto;
   padding: 20px;
 }
